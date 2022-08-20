@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    //HERO SLIDER
-    $('#hero-slider').owlCarousel({
+    //Homepage
+    $('#owl-home').owlCarousel({
         loop:true,
         autoplay:true,
         autoplayHoverPause:true,
@@ -9,6 +9,36 @@ $(document).ready(function(){
         items: 1,
         dots: false,
         smartSpeed: 1000,
+        responsive:{
+            0:{
+                nav: false,
+            },
+            768:{
+                nav: true,
+            }
+        }
+    })
+    //Services
+    $('#service-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: true,
+        smartSpeed: 600,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+    })
+    //Team
+    $('#team').owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: true,
+        smartSpeed: 600,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
     })
 });
 
@@ -19,5 +49,7 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
     })
+
+    
 
 

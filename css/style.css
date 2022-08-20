@@ -33,6 +33,11 @@ section {
     background-position: center !important;
 }
 
+.vr {
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
 /* NAVBAR */
 
 .top-nav {
@@ -147,12 +152,32 @@ section {
 }
 
 /* About */
+
 .info-box {
     display: flex;
     align-items: center;
 }
 
 .info-box img {
-    width: 30%;
-    margin-right: 18px;
+    width: 20%;
+    margin-left: 40px;
+    margin-right: 10px;
 }
+
+  /* Services */
+
+  #services {
+    background-image: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../img/services.jpg);
+  }
+
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .intro h6 {
+    font-weight: 100;
+    font-size: 60px;
+    color: #ffffff;
+  }
+
+
