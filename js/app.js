@@ -30,15 +30,21 @@ $(document).ready(function(){
         autoplayTimeout: 4000,
     })
     //Team
-    $('#team').owlCarousel({
+    $('#team-slider').owlCarousel({
         loop: true,
         nav: false,
-        items: 1,
         dots: true,
         smartSpeed: 600,
-        center: true,
         autoplay: true,
         autoplayTimeout: 4000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+        }
     })
 });
 
