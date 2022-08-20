@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/boxicons.min.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/style.css">  
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>RC Export Corporation</title>
   </head>
-  <body data-bs-spy='scroll' data-bs-target='.navbar'>
+  <body data-bs-spy='scroll' data-bs-target='.navbar' data-offset="50">
 
     <!-- Navbar -->
     <nav class="top-nav">
@@ -51,16 +51,16 @@
               <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about-scroll">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services-scroll">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
           </ul>
-          <a href="#" class="btn btn-brand ms-lg-3">Contact Us</a>
+          <a href="#" class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
         </div>
       </div>
     </nav>
@@ -98,8 +98,8 @@
     </div>
 
     <!-- About -->
-    <section class="about">
-      <div class="container" id="about">
+    <section id="about-scroll">
+      <div class="container">
         <div class="row">
 
           <!-- Infobox -->
@@ -142,7 +142,6 @@
         <div class="col-md-12 mb-md-0 mb-5 ml-5">
             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                 <div class="row">
-
                     <div class="col-md-6">
                         <div class="md-form mb-2">
                             <input type="text" id="name" name="name" class="form-control">
@@ -200,7 +199,7 @@
 
     <!-- Services -->
     <section id="services">
-      <div class="container" id="services-scroll">
+      <div class="container">
         <div class="row">
           <div class="col-12 intro text-center">
             <h6>OUR SERVICES</h6>
@@ -252,14 +251,14 @@
       </div>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-lg-5 text-center bg-light px-5 py-4" style="border-radius: 15px 15px 15px 15px;">
+          <div class="col-lg-5 text-center bg-light px-5 pt-5 pb-4" style="border-radius: 15px 15px 15px 15px;">
             <h5>MISSION</h5>
             <p>
               Our mission is to build relationships, not transactions. We will place our clients at the core of the business and provide the best experience for them, and deliver results. We will provide excellent quality service both our clients and employees.
             </p>
           </div>
-          <div class="vr d-none d-md-block mx-3"></div>
-          <div class="col-lg-5 text-center bg-light px-5 py-4" style="border-radius: 15px 15px 15px 15px;">
+          <div class="vr .d-none .d-md-block .d-lg-none mx-3"></div>
+          <div class="col-lg-5 text-center bg-light px-5 pt-5 pb-4" style="border-radius: 15px 15px 15px 15px;">
             <h5>VISION</h5>
             <p>
               We are committed to be the top of mind commodities supplier all over the globe. We will ensure excellent customer service for every client stepping in our premises. We assure our employees a friendly environment and workplace for their growth and success.
@@ -270,30 +269,200 @@
 
     </section>
 
-    <section>
+    <!-- Team -->
+
+    <section id="team">
       <div class="container">
         <div class="row">
-          <div class="col-12 intro text-center">
-            <h2>OUR TEAM</h2>
+          <div class="col-12 intro">
+            <h2>MEET OUR TEAM</h2>
             <h5>We are committed in pursuing the best of the best for you.</h5>
           </div>
-          <div class="owl-carousel owl-theme" id="team">
-            <div class="item"><h4>1</h4></div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
-            <div class="item"><h4>5</h4></div>
-            <div class="item"><h4>6</h4></div>
-            <div class="item"><h4>7</h4></div>
-            <div class="item"><h4>8</h4></div>
-            <div class="item"><h4>9</h4></div>
-            <div class="item"><h4>10</h4></div>
-            <div class="item"><h4>11</h4></div>
-            <div class="item"><h4>12</h4></div>
-        </div>
-        </div>
+          <div id="team-slider" class="owl-theme owl-carousel">
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Team Member's Name</h5>
+                  <p class="card-text">Details</p>
+                  <a href="#" class="btn btn-outline-light">View Linkedin</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Team Member's Name</h5>
+                  <p class="card-text">Details</p>
+                  <a href="#" class="btn btn-outline-light">View Linkedin</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Team Member's Name</h5>
+                  <p class="card-text">Details</p>
+                  <a href="#" class="btn btn-outline-light">View Linkedin</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Team Member's Name</h5>
+                  <p class="card-text">Details</p>
+                  <a href="#" class="btn btn-outline-light">View Linkedin</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Team Member's Name</h5>
+                  <p class="card-text">Details</p>
+                  <a href="#" class="btn btn-outline-light">View Linkedin</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <h6 style="margin-bottom: 0px; margin-top: 8px;">Get connected with us on our social platforms</h6>
+            </div>
+            <div class="col-auto">
+              <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-lg-3 d-none d-md-block">
+              <h6>ABOUT THE COMPANY</h6>
+              <p>
+                Our company is unified by the knowledge, experience, enthusiasm, professionalism and passion that drives us to perform with great excellence. Which motivates us to be inspired by challenges that come from our industry and competitors.
+              </p>
+            </div>
+            <div class="col-lg-3">
+              <div class="container d-none d-md-block ms-5">
+                <h6>ASSISTANCE</h6>
+                  <a href="#">Contact Us</a></br>
+                  <a href="#">Shipping Information</a></br>
+                  <a href="#">Returns & Exchanges</a></br>
+                  <a href="#">Payment</a></br>
+                  <a href="#">FAQs</a></br>
+              </div>
+            </div>
+            <div class="col-lg-3 d-none d-md-block">
+              <h6>CAREERS</h6>
+              <a href="#">Jobs</a></br>
+            </div>
+            <div class="col-lg-3 btn-news">
+              <h6>SIGN UP TO OUR NEWSLETTER</h6>
+              <input type="text" id="subscribe" name="subscribe" class="form-control mt-4">
+              <label for="email=subscribe" class="subscribe mt-1">Email Address</label>
+              <div class="text-center text-md-left">
+                <a class="btn btn-primary btn-lg btn-block mt-4" onclick="document.getElementById('contact-form').submit();">Subscribe</a>
+              </div>
+            </div>
+            <div class="container text-center mt-4">
+              <div class="row">
+                <div class="col-lg-12">
+                  <hr/>
+                  <p class="copyright my-0" style="font-size: 12px;">Copyright &copy; 2019 RC Export Corporation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 px-5 py-4 ms-3 bg-light" style="border-radius: 15px 15px 15px 15px;">
+                  <h2 class="h1-responsive font-weight-bold text-center">Contact us</h2>
+                  <!--Section description-->
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                    a matter of hours to help you.</p>
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="md-form mb-2">
+                              <input type="text" id="name" name="name" class="form-control">
+                              <label for="name" class="">Your name</label>
+                          </div>
+                      </div>
+  
+                      <div class="col-md-6">
+                          <div class="md-form mb-2">
+                              <input type="text" id="email" name="email" class="form-control">
+                              <label for="email" class="">Your email</label>
+                          </div>
+                      </div>
+  
+                  </div>
+  
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-2">
+                              <input type="text" id="subject" name="subject" class="form-control">
+                              <label for="subject" class="">Subject</label>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Grid row-->
+  
+                  <!--Grid row-->
+                  <div class="row">
+  
+                      <!--Grid column-->
+                      <div class="col-md-12">
+  
+                          <div class="md-form">
+                              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                              <label for="message">Your message</label>
+                          </div>
+  
+                      </div>
+                  </div>
+                  <!--Grid row-->
+  
+              </form>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-brand">Send Message</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

@@ -4,6 +4,7 @@ body {
     font-family: "Barlow", sans-serif;
     line-height: 1.7;
     color: darkgray;
+    position: relative;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -166,18 +167,70 @@ section {
 
   /* Services */
 
-  #services {
+#services {
     background-image: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../img/services.jpg);
-  }
+}
 
-  .intro {
+.intro {
     margin-bottom: 40px;
-  }
+}
 
-  .intro h6 {
+.intro h6 {
     font-weight: 100;
     font-size: 60px;
     color: #ffffff;
-  }
+}
 
+  /* Team */
+
+#team {
+    background-image: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../img/team.jpg);
+    background-size: 100%;
+}
+
+.intro h2 {
+    font-weight: 100;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.intro h5 {
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.card {
+    background-image: linear-gradient(to bottom right, rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.1));
+}
+
+.card-text {
+    color: #092032;
+}
+
+  /* Footer */
+
+.footer-top {
+    background-image: linear-gradient(to bottom right, rgba(9, 32, 50, 0.1), rgba(9, 32, 50, 0.8));
+    padding: 5px;
+}
+
+.footer-bottom {
+    background-image: linear-gradient(to bottom right, rgba(24, 25, 26, 0.8), rgba(9, 32, 50, 0.5));
+}
+
+.footer-bottom a {
+    color: darkgray;
+}
+
+.footer-bottom .btn-news a {
+    width:100%;
+    display:block;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    border: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.726);
+  }
 
