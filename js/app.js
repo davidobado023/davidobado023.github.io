@@ -123,9 +123,3 @@ function checkStatusModal(){
         errorModal.innerHTML = '';
     }
 }
-
-
-
-    
-
-
