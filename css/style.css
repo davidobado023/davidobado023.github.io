@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap');
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+@media only screen and (max-width: 768px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 }
+
 body {
     font-family: "Barlow", sans-serif;
     line-height: 1.7;
@@ -122,6 +125,7 @@ section {
 /* Slider */
 .slide1 {
     background-image: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../img/slider1.jpg);
+
 }
 
 .slide2 {
@@ -191,7 +195,6 @@ section {
 
 #team {
     background-image: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../img/team.jpg);
-    background-size: 100%;
 }
 
 .intro h2 {
@@ -207,6 +210,7 @@ section {
 
 .card {
     background-image: linear-gradient(to bottom right, rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.1));
+    max-width: 100%;
 }
 
 .card-text {
@@ -226,6 +230,10 @@ section {
 
 .footer-bottom a {
     color: darkgray;
+}
+
+.footer-bottom a:hover {
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .footer-bottom .btn-news a {
